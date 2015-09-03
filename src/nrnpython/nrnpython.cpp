@@ -56,6 +56,7 @@ void nrnpy_augment_path() {
 
 int nrnpy_pyrun(const char* fname) {
 #ifdef MINGW
+#if PY_MAJOR_VERSION < 3
 /*
 http://www.megasolutions.net/python/How-to-receive-a-FILE--from-Python-under-MinGW_-38375.aspx
 Because microsoft C runtimes are not binary compatible, we can't just
@@ -79,6 +80,13 @@ work-around...
 		return 1;
 	}
 #else
+  char cmd[1024];
+  sprintf(cmd, "exec(open(%s).read())", fname);
+  printf("This can't possibly work.\ncmd = %s\n", cmd);
+  assert(PyRun_SimpleString(cmd) == 0);
+  return 1;
+#endif /* PY_MAJOR_VERSION */
+#else
 	FILE* fp = fopen(fname, "r");
 	if (fp) {
 		PyRun_AnyFile(fp, fname);
@@ -88,7 +96,7 @@ work-around...
 		fprintf(stderr, "Could not open %s\n", fname);
 		return 0;
 	}
-#endif
+#endif  /* MINGW */
 }
 
 #if PY_MAJOR_VERSION >= 3
