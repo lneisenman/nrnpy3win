@@ -120,8 +120,9 @@ edit line 6612 in the file `nrn/configure` to read::
 
    npy_apiver=`$ac_nrn_python -c "import sys;sys.stdout.write(str(sys.api_version))"`
 
-Replace `src/nrnpython/nrnpython.cpp` with my edited version. This is necessary
-because the `PyFile_AsFile` macro does not exist in the Python 3 C API.
+Replace `src/nrnpython/nrnpython.cpp` with `my edited version <https://github.com/lneisenman/nrnpy3win/blob/master/src/nrnpython/nrnpython.cpp>_`. 
+This is necessary because the `PyFile_AsFile` macro does not exist in the
+Python 3 C API.
 
 Then build in 2 stages with the following commands::
 
