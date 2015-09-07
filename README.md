@@ -15,7 +15,7 @@ installed, you can test that python works correctly with the installation.
 
 Rename `C:\nrn` as `C:\nrnpy2`
 
-Download and uncompress [my version of the nrn folder](https://github.com/lneisenman/nrnpy3win/releases/download/untagged-8457253caae1b4e5a08f/nrn.7z)
+Download and uncompress [my version of the nrn folder](https://github.com/lneisenman/nrnpy3win/releases/download/v0.1.0alpha/nrn.7z)
 and place at `C:\nrn`. You should now be good to go. When running from a terminal
 window, I have had better luck with nrniv -python as opposed to just starting
 with python because of problems with the value of `h.neuronhome()`. However,
