@@ -120,7 +120,7 @@ edit line 6612 in the file `nrn/configure` to read::
 
    npy_apiver=`$ac_nrn_python -c "import sys;sys.stdout.write(str(sys.api_version))"`
 
-Replace `src/nrnpython/nrnpython.cpp` with `my edited version <https://github.com/lneisenman/nrnpy3win/blob/master/src/nrnpython/nrnpython.cpp>_`. 
+Replace `src/nrnpython/nrnpython.cpp` with `my edited version <https://github.com/lneisenman/nrnpy3win/blob/master/src/nrnpython/nrnpython.cpp>`_. 
 This is necessary because the `PyFile_AsFile` macro does not exist in the
 Python 3 C API.
 
@@ -134,7 +134,7 @@ Then build in 2 stages with the following commands::
   
 The make mswin command will fail but will have created the directory C:\\marshalnrn64
 From C:\\marshalnrn64\\nrn\\bin copy hocmodule.dll to C:\\nrn\\lib\\python\\neuron\\hoc.pyd
-Replace the remianing python files in that folder with the corresponding files
+Replace the remaining python files in that folder with the corresponding files
 from neuron compiled for python3 on a Linux system. I used Ubuntu 14.04 64 bit
 running in Virtualbox. For some reason, 2to3 is not run on these files.
 Similarly, cython is not run in the rxd folder although I'm not sure it is run
