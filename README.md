@@ -25,7 +25,7 @@ I have not had problems.
 
 Detailed instructions describing what I did are available [here](https://github.com/lneisenman/nrnpy3win/blob/master/Instructions.rst).
 
-Although Python3.5 will be released shortly, I don't think it will be possible
+Although Python3.5 is now available, I don't think it will be possible
 to replicate this process until there is a way to [use Mingw to build python
 modules that are compatible with the new version of MS Visual C](http://stevedower.id.au/blog/building-for-python-3-5/).
 More info [here](http://bugs.python.org/issue4709#msg243625).
