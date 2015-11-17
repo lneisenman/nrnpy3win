@@ -134,7 +134,7 @@ Then build in 2 stages with the following commands::
   
 The make mswin command will fail but will have created the directory C:\\marshalnrn64
 From C:\\marshalnrn64\\nrn\\bin copy hocmodule.dll to C:\\nrn\\lib\\python\\neuron\\hoc.pyd
-Replace the remianing python files in that folder with the corresponding files
+Replace the remaining python files in that folder with the corresponding files
 from neuron compiled for python3 on a Linux system. I used Ubuntu 14.04 64 bit
 running in Virtualbox. For some reason, 2to3 is not run on these files.
 Similarly, cython is not run in the rxd folder although I'm not sure it is run
