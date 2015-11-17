@@ -9,7 +9,7 @@ assumed to be **bug ridden** until proven otherwise.
 
 ##Installation
 
-Download and install [Neuron release 1351](http://www.neuron.yale.edu/ftp/neuron/versions/v7.4/nrn-7.4.x86_64-w64-mingw32-setup.exe).
+Download and install [Neuron release 1370](http://www.neuron.yale.edu/ftp/neuron/versions/v7.4/nrn-7.4.x86_64-w64-mingw32-setup.exe).
 Make sure to choose the option for the DOS settings. If you have Python2.7
 installed, you can test that python works correctly with the installation.
 

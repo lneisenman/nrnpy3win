@@ -40,7 +40,7 @@ Install packages using `pacman`::
 
    pacman -S base-devel
    pacman -S mingw-w64-x86_64-python3
-   cp /mingw64/bin/2to3-3.4 /mingw64/bin/2to3
+   cp /mingw64/bin/2to3-3.5 /mingw64/bin/2to3
 
 
 Download and uncompress `Carl Kleffner's Mingw build for Python 3 <https://bitbucket.org/carlkl/mingw-w64-for-python/downloads/mingwpy_amd64_vc100.7z>`_
