@@ -6,10 +6,10 @@ Instructions for building Neuron for Python3.4 on Windows
 These instructions are modified from the instructions given in `HowToMingw <http://www.neuron.yale.edu/hg/neuron/nrn/file/c92ef98299b0/howtomingw>`_.
 
 
-Install Neuron release 1351
+Install Neuron release 1370
 ---------------------------
 
-Install `Neuron release 1351 <http://www.neuron.yale.edu/ftp/neuron/versions/v7.4/nrn-7.4.x86_64-w64-mingw32-setup.exe>`_.
+Install `Neuron release 1370 <http://www.neuron.yale.edu/ftp/neuron/versions/v7.4/nrn-7.4.x86_64-w64-mingw32-setup.exe>`_.
 Make sure to choose the option for the DOS settings. If you have Python2.7
 installed, you can test that python works correctly with the installation. In
 case you need to undue what follows, backup C:\\nrn to C:\\nrnpy2
